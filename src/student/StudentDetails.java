@@ -1,8 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package studentdetails;
+package student;
+
 
 /**
  *
@@ -15,9 +12,9 @@ public class StudentDetails {
      */
     public static void main(String[] args) {
        
-       StudentDetails[] list = new StudentDetails[3] ;  //array of object decalration
+       Student[] list = new Student[3] ;  //array of object decalration
       //define 3 students  by creating object of student class
-        var s1 = new StudentDetails(); // s1 - object
+        Student s1 = new Student(); // s1 - object
         s1.setName("peter");
         s1.setAge(21);
          Student s2 = new Student(); // s2 - object
@@ -29,11 +26,12 @@ public class StudentDetails {
         //store object in array
           list[0] = s1;       
             list[1] = s2;   
-            list[2] = s2;   
+            list[2] = s3;   
             for(int i=0;i<list.length;i++) //read the array 
             {
                 System.out.println(list[i].getName() + " "+list[i].getAge());
             
     }
     
+    }
 }
